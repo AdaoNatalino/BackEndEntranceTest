@@ -48,7 +48,6 @@ You will implement those 5 REST methods :
 - POST
 
 \
-\
 POST :
 ```
 The post method will take a body to create a simple user, with first name and last name, age and height.
