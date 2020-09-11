@@ -120,6 +120,7 @@ Good to know :
 ```
 The objectives of the test is to understand how you structure
 your code with specific rules.
+The language we use inside the company is Crystal Language.
 We then will have a talk about how you handle all of this.
 ```
 Optionnal work :
