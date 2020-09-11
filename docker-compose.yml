@@ -1,0 +1,35 @@
+version: '3.7'
+
+services:
+
+  ruby_app:
+    build: ./
+    command: "ruby src/app.rb"
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "5000:5000"
+      - "5050:5050"
+    environment:
+      - DB_MONGO_ADDR=mongodb://mongo:27017
+    links:
+      - "mongodb:mongo"
+    depends_on:
+      - mongodb
+    networks:
+      - host
+
+  mongodb:
+    image: "mongo"
+    volumes:
+      - db_data:/data/db
+    ports:
+      - "27017-27019:27017-27019"
+    networks:
+      - host
+
+volumes:
+  db_data:
+
+networks:
+  host:
