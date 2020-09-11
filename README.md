@@ -12,7 +12,7 @@ git clone https://github.com/OrangeMaple22/BackEndEntranceTest.git
 ```
 
 After you created this repository, you will create a fork and when the work is finished you will be able to send the link of your test.
-Then, you will need to install the packages with this command :
+Then, you will need to install the container with this command :
 ```
 docker-compose build
 ```
