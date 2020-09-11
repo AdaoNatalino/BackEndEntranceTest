@@ -27,7 +27,7 @@ docker-compose restart ruby_app
 The binded port for the API you will create are 5000 and 5050 (same on your localhost and inside the docker)
 
 ## I] The Test
-It consists on creating a little sercer as a RESTful Api, the container is runned with rails, but you can use every gems you want, if you want to add some, you can update the Gemfile, and run this commands :
+It consists on creating a little server as a RESTful Api, the container is runned with rails, but you can use every gems you want, if you want to add some, you can update the Gemfile, and run this commands :
 ```
 docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:2.5 bundle install
 docker-compose build
