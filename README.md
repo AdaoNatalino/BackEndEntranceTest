@@ -34,6 +34,10 @@ docker-compose build
 ```
 \
 You start from file app.rb in src, you have to create one file per methods.
+The route will be :
+```
+/v1/auth/users
+```
 \
 You will implement those 5 REST methods :
 
