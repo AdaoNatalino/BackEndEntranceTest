@@ -61,8 +61,8 @@ A body will look like this (JSON file) :
 }
 ```
 GET :
-```md
-The get method will respond with all the users, just send a JSON file with an **array** of all users.
+```
+The get method will respond with all the users, just send a JSON file with an **ARRAY** of all users in a JSON format.
 Respond with 200 on success.
 ```
 DELETE :
@@ -89,7 +89,7 @@ Respond with success will be 200.
 If the user with the id doesn't exists or if there is more than one field, respond with error.
 ```
 PUT :
-```md
+```
 The put method will take **ALL** the fields of the users and his id. IE :
 {
   "id" : 7
